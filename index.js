@@ -65,4 +65,27 @@ for(let i = 0; i < longText.length; i++ ){
         count2 ++;
     }
     }
-    console.log(count2);
+    
+console.log(count2);
+
+
+
+// Bonus 2
+
+
+const palin = "A man, a plan, a canal, Panama"
+
+
+let palMod = palin.toLowerCase().trim();
+let comparePal ="";
+
+ for(let i = palMod.length-1; i >= 0; i--){
+   let char = palMod[i];
+   comparePal += char;
+ }
+ 
+ if(palMod === comparePal){
+   console.log("Es un palíndromo")
+ } else {
+   console.log("No es un palíndromo")
+ }
